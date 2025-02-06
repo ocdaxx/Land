@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резервный аккаунт двойник</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2d89ff, #6ec1e4);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-btn {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .hero .cta-btn:hover {
+            background-color: #ffcd00;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item h3 {
+            font-size: 20px;
+            color: #2d89ff;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2d89ff;
+            color: white;
+            border-radius: 0 0 8px 8px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Резервный аккаунт двойник</h1>
+            <p>Дополнительная конверсия с помощью органики и автоматизации взаимодействий.</p>
+            <button class="cta-btn" onclick="scrollToFeatures()">Узнать больше</button>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="feature-item">
+                <h3>Автоматическое взаимодействие</h3>
+                <p>Лайки, просмотры стори, подписки по заданной базе вашей потенциальной аудитории.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Чат-бот для прогрева</h3>
+                <p>Мотивирует прогревать алгоритмы вашего основного аккаунта и совершать целевые действия прямо в директе.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Автопостер</h3>
+                <p>Листайте ленту, репостите понравившийся пост в телеграм-бот, и он автоматически публикует материал в дублирующем аккаунте.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Встроенный чат GPT</h3>
+                <p>Общайтесь из основного аккаунта, отправляя команды в чат двойника для автоматического ответа.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Комментарии и отметки</h3>
+                <p>Повышайте вовлеченность и взаимодействие за счет автоматизированных комментариев и отметок пользователей.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Управление из телеграм-бота</h3>
+                <p>Все процессы удобно контролируются из одного окна Telegram.</p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>Начните использовать резервный аккаунт двойник уже сегодня! <a href="#">Свяжитесь с нами</a>.</p>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToFeatures() {
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
